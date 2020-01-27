@@ -2,10 +2,10 @@
     </main>
 
  <footer class="page-footer kiame-footer">
-        <div class="container colort">
+        <div class="container">
             <div class="links">
 
-<nav class="navbar navbar-light navbar-expand-lg fixed-botton ">
+<nav class="navbar navbar-light navbar-expand-lg fixed-botton colort">
 	<!-- Brand and toggle get grouped for better mobile display -->
 		<?php
 		wp_nav_menu( array(
