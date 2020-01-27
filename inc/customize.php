@@ -140,26 +140,26 @@ function kiame_customize_register($wp_customize)
 ));
 
 
-//     $wp_customize->add_section('footer_text', array(
-//     'title' => __('Footer Text', 'kiame'),
-//     'priority' => null,
-//     'description' => __('Add footer copyright text', 'kiame'),
-// ));
+    $wp_customize->add_section('footer_text', array(
+    'title' => __('Footer Text', 'kiame'),
+    'priority' => null,
+    'description' => __('Add footer copyright text', 'kiame'),
+));
 
-//     $wp_customize->add_setting( 'copyright_text_view', array(
-//         'default' => esc_html__('This is the footer','kiame'),
-//         'sanitize_callback' => 'sanitize_text_field'
-//         ) 
-//     );
-//         $wp_customize->add_control(
-//             'copyright_text',
-//             array(
-//                 'input' => esc_html__('This is the footer 2'),
-//                 'setting' => 'copyright_text',
-//                 'section' => 'footer_text'
+    $wp_customize->add_setting( 'copyright_text_view', array(
+        'default' => esc_html__('This is the footer','kiame'),
+        'sanitize_callback' => 'sanitize_text_field'
+        ) 
+    );
+        $wp_customize->add_control(
+            'copyright_text',
+            array(
+                'input' => esc_html__('This is the footer 2'),
+                'setting' => 'copyright_text',
+                'section' => 'footer_text'
             
-//         )
-//     );
+        )
+    );
 
 
     $wp_customize->add_setting(
