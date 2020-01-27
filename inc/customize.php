@@ -81,13 +81,13 @@ function kiame_customize_register($wp_customize)
 
 
     $wp_customize->add_setting('color_text_menu', array(
-    'default' => '#ffffff',
+    'default' => '#000000',
     'sanitize_callback' => 'sanitize_hex_color',
     ));
 
     $wp_customize->add_control(
     new WP_Customize_Color_Control($wp_customize, 'color_text_menu', array(
-        'label' => __('color for Menu', 'kiame'),
+        'label' => __('color for Menus', 'kiame'),
         'section' => 'colors',
         'settings' => 'color_text_menu',
     ))
@@ -106,33 +106,12 @@ function kiame_customize_register($wp_customize)
     $wp_customize->add_control(
         new WP_Customize_Color_Control(
             $wp_customize, 'background_color_menu', array(
-                'label' => __('Background Color Menu', 'kiame'),
+                'label' => __('Background Color Menu and Footer', 'kiame'),
                 'section' => 'colors',
                 'settings' => 'background_color_menu',
             )
         )
     );
-
-
-
-
-    // FOOTER COPY
-
-    $wp_customize->add_setting(
-        'background_scheme_footer_copy', 
-    array(
-    'default' => '#000000',
-    'sanitize_callback' => 'sanitize_hex_color',
-));
-
-    $wp_customize->add_control(
-    new WP_Customize_Color_Control(
-        $wp_customize, 'background_scheme_footer_copy', array(
-        'label' => __('Background for Copyright', 'kiame'),
-        'section' => 'colors',
-        'settings' => 'background_scheme_footer_copy',
-    ))
-);
 
 
     /*
@@ -270,10 +249,10 @@ function kiame_custom_css()
 <style type="text/css">
 
     .colort a, .colort ul li a {
-        color: <?php echo esc_html(get_theme_mod('color_text_menu')); ?> !important;
+        color: <?php echo esc_html(get_theme_mod('color_text_menu', '#000000')); ?> !important;
     }
 
-    .bg-white {
+    .bg-white, .kiame-footer {
         background-color: <?php echo esc_html(get_theme_mod('background_color_menu')); ?> !important;
     }
 
