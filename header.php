@@ -24,7 +24,7 @@
 		  <div class="container colort"><a class="navbar-brand logo" href="<?php echo esc_url(home_url( '/'));?>"><?php echo bloginfo( 'name' );?></a>
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="sr-only"><?php _e('Toggle navigation','kiame');?></span><span class="navbar-toggler-icon"></span>
+				<span class="sr-only"><?php esc_html_e('Toggle navigation','kiame');?></span><span class="navbar-toggler-icon"></span>
 			</button>
 				<?php
 				wp_nav_menu( array(
