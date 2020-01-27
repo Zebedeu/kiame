@@ -83,7 +83,7 @@ function add_menu_link_class($atts, $item, $args)
 add_filter('nav_menu_link_attributes', 'add_menu_link_class', 1, 3);
 
 
-require get_template_directory().'/inc/class-wp-bootstrap-navwalker.php';
+require get_template_directory().'/inc/class-wp-kiame-walker-nav-menu.php';
 require get_template_directory().'/inc/widgets.php';
 require get_template_directory() . '/inc/theme-support.php';
 require get_template_directory().'/inc/enqueue.php';
