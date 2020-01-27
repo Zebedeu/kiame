@@ -33,7 +33,7 @@
 					'container_class'   => 'collapse navbar-collapse',
 					'container_id'      => 'navbarNav',
 					'menu_class'        => 'nav navbar-nav ml-auto',
-					'walker'            => new MZ_Walker_Nav_Menu(),
+					'walker'            => new Kiame_Walker_Nav_Menu(),
 				) );
 				?>
 

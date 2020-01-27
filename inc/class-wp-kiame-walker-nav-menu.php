@@ -1,6 +1,6 @@
 <?php 
 
-class MZ_Walker_Nav_Menu extends Walker_Nav_Menu {
+class Kiame_Walker_Nav_Menu extends Walker_Nav_Menu {
  
     /**
      * Starts the list before the elements are added.
