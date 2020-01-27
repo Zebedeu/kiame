@@ -154,7 +154,7 @@ function kiame_customize_register($wp_customize)
         $wp_customize->add_control(
             'copyright_text',
             array(
-                'input' => esc_html__('This is the footer 2'),
+                'input' => esc_html__('This is the footer 2', 'kiame'),
                 'setting' => 'copyright_text',
                 'section' => 'footer_text'
             
