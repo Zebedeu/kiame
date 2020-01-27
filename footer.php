@@ -28,7 +28,7 @@
             	<?php echo  get_theme_mod( 'linkedin') ? '<a href="'. esc_url(get_theme_mod( 'linkedin')) .  '"><i class="icon ion-social-linkedin-outline"></i></a>' : '' ; ?>
             	</div>
         </div>
-        <p><?php echo date_i18n( 'Y') . ' '. esc_html(get_theme_mod('copyright_text'));?></p>
+        <p><?php echo esc_html(date_i18n( 'Y') . ' '. get_theme_mod('copyright_text'));?></p>
     </footer>
     <?php wp_footer();?>
 

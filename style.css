@@ -1601,3 +1601,10 @@ include media(">=medium").alignwide {
   max-width: 992px;
   width: 992px;
 }
+
+/* 404 */
+
+
+.error-404-template {
+  padding: 10%  0  10% 40%;
+  }
