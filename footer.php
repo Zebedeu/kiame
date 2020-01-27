@@ -21,7 +21,12 @@
 
             </div>
             <div class="social-icons">
-            	<a href="<?php echo esc_url(get_theme_mod( 'facebook')) ?>"><i class="icon ion-social-facebook"></i></a><a href="<?php echo esc_url(get_theme_mod( 'instagram')) ?>"><i class="icon ion-social-instagram-outline"></i></a><a href="<?php echo esc_url(get_theme_mod( 'twitter')) ?>"><i class="icon ion-social-twitter"></i></a><a href="<?php echo esc_url(get_theme_mod( 'google')) ?>"><i class="icon ion-social-google"></i></a><a href="<?php echo esc_url(get_theme_mod( 'linkedin')) ?>"><i class="icon ion-social-linkedin-outline"></i></a></div>
+            	<?php echo  get_theme_mod( 'facebook') ? '<a href="'.  esc_url(get_theme_mod( 'facebook')).  '"><i class="icon ion-social-facebook"></i></a>' : '' ; ?>
+            	<?php echo  get_theme_mod( 'instagram') ? '<a href="'. esc_url(get_theme_mod( 'instagram'))  .'"><i class="icon ion-social-instagram-outline"></i></a>' : '' ; ?>
+            	<?php echo  get_theme_mod( 'twitter') ? '<a href="'. esc_url(get_theme_mod( 'twitter'))  .'"><i class="icon ion-social-twitter"></i></a>' : '' ; ?>
+            	<?php echo  get_theme_mod( 'google') ? '<a href="'. esc_url(get_theme_mod( 'google')) .'"><i class ="icon ion-social-google"></i></a>' : '' ; ?>
+            	<?php echo  get_theme_mod( 'linkedin') ? '<a href="'. esc_url(get_theme_mod( 'linkedin')) .  '"><i class="icon ion-social-linkedin-outline"></i></a>' : '' ; ?>
+            	</div>
         </div>
         <p><?php echo date_i18n( 'Y') . ' '. esc_html(get_theme_mod('copyright_text'));?></p>
     </footer>
