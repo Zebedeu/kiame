@@ -12,8 +12,8 @@
 			'theme_location'    => 'secondary',
 			'depth'             => 2,
 			'menu_class'        => 'nav navbar-nav',
-			'fallback_cb'       => 'MZ_Walker_Nav_Menu::fallback',
-			'walker'            => new MZ_Walker_Nav_Menu(),
+			'fallback_cb'       => 'Kiame_Walker_Nav_Menu::fallback',
+			'walker'            => new Kiame_Walker_Nav_Menu(),
 		) );
 		?>
 
