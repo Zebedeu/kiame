@@ -10,7 +10,7 @@ if( post_password_required() ){
 
 ?>
 
-<div id="comments" class="comments-area">
+<div id="comments" class="comments-area col-lg-7">
 	
 	<?php 
 		if( have_comments() ):
@@ -107,7 +107,7 @@ if( post_password_required() ){
 			'class_submit' => 'btn btn-block btn-lg btn-info',
 			'labkiame_submit' => __( 'Submit Comment', 'kiame' ),
 			'comment_field' =>
-				'<div class="form-group"><label for="comment">' . _x( 'Comment', 'noun', 'kiame' ) . '</label> <span class="required">*</span><textarea id="comment" class="form-control" name="comment" rows="4" required="required"></textarea></p>',
+				'<p class="form-group"><label for="comment">' . _x( 'Comment', 'noun', 'kiame' ) . '</label> <span class="required">*</span><textarea id="comment" class="form-control" name="comment" rows="4" required="required"></textarea></p>',
 			'fields' => apply_filters( 'comment_form_default_fields', $fields )
 			
 		);
