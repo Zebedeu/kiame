@@ -11,9 +11,7 @@
 		wp_nav_menu( array(
 			'theme_location'    => 'secondary',
 			'depth'             => 2,
-			'container'         => 'div',
-			'container_class'   => 'collapse navbar-collapse',
-			'container_id'      => 'navbarNav',
+			'menu_class'        => 'nav navbar-nav',
 			'fallback_cb'       => 'Kiame_Walker_Nav_Menu::fallback',
 			'walker'            => new Kiame_Walker_Nav_Menu(),
 		) );
