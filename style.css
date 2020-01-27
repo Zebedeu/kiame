@@ -1215,6 +1215,7 @@ a.btn-kiame:focus,
 .comments-area {
   border-top: 4px solid #F1F1F1;
   margin-top: 40px;
+  margin-left:20%;
 }
 
 .last-field {
