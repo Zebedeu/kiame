@@ -183,12 +183,12 @@ function kiame_customize_register($wp_customize)
 
 ));
 
-    $wp_customize->add_setting('fb', array(
+    $wp_customize->add_setting('facebook', array(
     'default' => '#facebook',
     'sanitize_callback' => 'esc_url_raw',
 ));
 
-    $wp_customize->add_control('facebbok', array(
+    $wp_customize->add_control('facebook', array(
     'label' => __('Add facebook link here', 'kiame'),
     'setting' => 'facebbok',
     'section' => 'social_sec',
@@ -216,25 +216,25 @@ function kiame_customize_register($wp_customize)
     'section' => 'social_sec',
 ));
 
-    $wp_customize->add_setting('gplus', array(
-    'default' => '#gplus',
+    $wp_customize->add_setting('google', array(
+    'default' => '#google',
     'sanitize_callback' => 'esc_url_raw',
 ));
 
-    $wp_customize->add_control('gplus', array(
+    $wp_customize->add_control('google', array(
     'label' => __('Add google plus link here', 'kiame'),
-    'setting' => 'gplus',
+    'setting' => 'google',
     'section' => 'social_sec',
 ));
 
-    $wp_customize->add_setting('linked', array(
+    $wp_customize->add_setting('linkedin', array(
     'default' => '#linkedin',
     'sanitize_callback' => 'esc_url_raw',
 ));
 
-    $wp_customize->add_control('linked', array(
+    $wp_customize->add_control('linkedin', array(
     'label' => __('Add linkedin link here', 'kiame'),
-    'setting' => 'linked',
+    'setting' => 'linkedin',
     'section' => 'social_sec',
 ));
 
