@@ -192,6 +192,7 @@ function kiame_customize_register($wp_customize)
     'label' => __('Add facebook link here', 'kiame'),
     'setting' => 'facebbok',
     'section' => 'social_sec',
+    'type'    => 'url',
 ));
 
     $wp_customize->add_setting('twitter', array(
@@ -203,6 +204,7 @@ function kiame_customize_register($wp_customize)
     'label' => __('Add twitter link here', 'kiame'),
     'setting' => 'twitter',
     'section' => 'social_sec',
+    'type'    => 'url',
 ));
 
     $wp_customize->add_setting('instagram', array(
@@ -214,6 +216,7 @@ function kiame_customize_register($wp_customize)
     'label' => __('Add instagram link here', 'kiame'),
     'setting' => 'instagram',
     'section' => 'social_sec',
+    'type'    => 'url',
 ));
 
     $wp_customize->add_setting('google', array(
@@ -225,6 +228,7 @@ function kiame_customize_register($wp_customize)
     'label' => __('Add google plus link here', 'kiame'),
     'setting' => 'google',
     'section' => 'social_sec',
+    'type'    => 'url',
 ));
 
     $wp_customize->add_setting('linkedin', array(
@@ -236,6 +240,7 @@ function kiame_customize_register($wp_customize)
     'label' => __('Add linkedin link here', 'kiame'),
     'setting' => 'linkedin',
     'section' => 'social_sec',
+    'type'    => 'url',
 ));
 
 

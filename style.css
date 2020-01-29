@@ -45,6 +45,12 @@ Text Domain: kiame
   }
 }
 
+
+img {
+
+  max-width: 100%;
+  height: auto;
+}
 /*
 	@package kiame
 */
@@ -171,51 +177,47 @@ Text Domain: kiame
   display: block;
 }
 
-.alignnone {
-  margin: 5px 20px 20px 0;
+
+/* Wide */
+
+.alignwide {
+  max-width: 120rem;
+  position: relative;
+  width: calc(100% - 4rem);
 }
+
+[class*="__inner-container"] > .alignwide {
+  width: 100%;
+}
+
+/* Center */
 
 .aligncenter,
-div.aligncenter {
-  display: block;
-  margin: 5px auto 5px auto;
-}
-
-.alignright {
-  float: right;
-  margin: 5px 0 20px 20px;
-}
-
-.alignleft {
-  float: left;
-  margin: 5px 20px 20px 0;
-}
-
-a img.alignright {
-  float: right;
-  margin: 5px 0 20px 20px;
-}
-
-a img.alignnone {
-  margin: 5px 20px 20px 0;
-}
-
-a img.alignleft {
-  float: left;
-  margin: 5px 20px 20px 0;
-}
-
-a img.aligncenter {
-  display: block;
+.aligncenter {
   margin-left: auto;
   margin-right: auto;
 }
 
-img.aligncenter {
-  width: 100%;
-  height: auto;
+/* Left and right */
+
+.alignleft,
+.alignright {
+  max-width: 5%;
 }
 
+.alignleft {
+
+  /*rtl:ignore*/
+  float: left;
+  margin: 0.3rem 2rem 2rem 2rem;
+}
+
+.alignright {
+
+  /*rtl:ignore*/
+  float: right;
+  margin: 0.3rem 2rem 2rem 2rem;
+}
 .wp-caption {
   background: #fff;
   border: 1px solid #f0f0f0;
@@ -237,7 +239,7 @@ img.aligncenter {
   margin: 5px 0 20px 20px;
 }
 
-.wp-caption img {
+.wp-caption {
   border: 0 none;
   height: auto;
   margin: 0;
@@ -1588,13 +1590,13 @@ h2.kiame-widget-title {
 .js-show-feedback {
   display: block;
 }
-
+/*
 .alignwide,
 .alignfull {
   margin: calc( 2 * 32px) calc(50% - 50vw);
   max-width: 100vw;
   width: 100vw;
-}
+}*/
 
 include media(">=medium").alignwide {
   margin: calc( 2 * 32px) calc( ( 767px - 992px ) / 2);

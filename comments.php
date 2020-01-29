@@ -10,8 +10,14 @@ if( post_password_required() ){
 
 ?>
 
-<div id="comments" class="comments-area col-lg-7">
-	
+<div id="comments" class="comments-area">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-lg-8">
+		
 	<?php 
 		if( have_comments() ):
 		//We have comments
@@ -115,5 +121,8 @@ if( post_password_required() ){
 		comment_form( $args ); 
 		
 	?>
+	</div>
+</div>
+</div>
 	
 </div><!-- .comments-area -->
