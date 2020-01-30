@@ -1,24 +1,29 @@
-<div id="post-<?php the_ID(); ?>" <?php post_class("col-md-6 col-lg-4 item zoom-on-hover"); ?>>
-        <a class="entry-title" href="<?php echo  esc_url( get_permalink() );?>" rel="bookmark">
-            <?php if( !kiame_get_attachment() ) : ?>
-            <img class="img-fluid image" src="<?php echo esc_url(get_template_directory_uri());?>/assets/img/nature/image2.jpg">
-            <?php else: ?>
-            <img class="img-fluid image" src="<?php echo esc_url(kiame_get_attachment());?>">
-            <?php endif;?>
-            <span class="description">
-                <span>
-                <?php if(is_archive()) { ?>
-                    <header class="description-heading text-center">
-                        <?php the_archive_title('<h1 class="page-title">', '</h1>'); ?>
-                    </header>
-           <?php  } ?>
 
+<div id="post-<?php the_ID();?>" <?php  post_class("container") ?>>
+    <div class="text-center" style="padding: 1vh;">
+    </div>    
+    <div class="row">
+        <?php if( ! is_active_sidebar( 'sidebar-1' ) ): ?>
+        <div class="col-12 col-md-12  info">
+        <?php else: ?>
+        <div class="col-12 col-md-8 info">
+         <?php endif;?>
+            <div class="entry-content card-header row">
+                <div class="col-lg-7">
+                    <?php the_title( '<h3 class="entry-title"><a href="'. esc_url(get_the_permalink( )).'">', '</a></h3>'); ?>
+                    <p><?php the_excerpt();?></p>
+                </div>
+                <div class="col-lg-5">
+                    <?php if(has_post_thumbnail()){?>
+                    <div class="image " style="background-image:url(<?php echo esc_url(kiame_get_attachment()); ?>);">
+                    </div>
+                <?php }?>
+                </div>
 
-                </span>
-                <span class="description-heading"><?php the_title_attribute( ); ?></span>
-                    <span class="description-body">
-                            <?php the_excerpt(); ?>
-                    </span>
-            </span>
-        </a>
+            </div>
+
+        </div>
+        <?php get_sidebar(); ?>
+
+    </div>
 </div>

@@ -11,9 +11,9 @@
     <?php endif;?>
     <div class="row">
                     <?php if( ! is_active_sidebar( 'sidebar-1' ) ): ?>
-                    <div class="col-12 col-md-10 offset-md-1 info">
+                    <div class="col-12 col-md-12  info card-header">
                         <?php else: ?>
-                        <div class="col-12 col-md-6 offset-md-1 info">
+                        <div class="col-12 col-md-8 info card-header">
                         <?php endif;?>
             <?php the_title( '<h3 class="entry-title">', '</h3>'); ?>
             <p><?php the_content();?></p>

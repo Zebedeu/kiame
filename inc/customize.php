@@ -45,36 +45,6 @@ function kiame_customize_register($wp_customize)
 
 
     /*
-    
-    Image Logo
-
-    */
-
-
-    $wp_customize->add_section('logo_section', array(
-        'title' => __('Image Logo', 'kiame'),
-        'description' => __('Featured Image Size Should be ( 1400x446 ).', 'kiame'),
-        'priority' => null,
-    ));
-    $wp_customize->add_setting( 'header_logo', array(
-        'default' => '',
-        'sanitize_callback' => 'esc_url_raw',
-        )
-    );
-
-    $wp_customize->add_control(
-        new WP_Customize_Image_Control(
-            $wp_customize,
-            'header_logo',
-             array(
-                'label' => __('Image Logo', 'kiame'),
-                'setting' => 'header_logo',
-                'section'=> 'logo_section',
-             )
-        )
-    );
-
-    /*
 
     Color text Site Name and Description 
     */
@@ -109,6 +79,25 @@ function kiame_customize_register($wp_customize)
                 'label' => __('Background Color Menu and Footer', 'kiame'),
                 'section' => 'colors',
                 'settings' => 'background_color_menu',
+            )
+        )
+    );
+
+    /* sidebar color*/
+
+    
+        $wp_customize->add_setting(
+        'background_sidebar',  array(
+            'default' => '#1e1e1e',
+            'sanitize_callback' => 'sanitize_hex_color',
+        )
+    );
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control(
+            $wp_customize, 'background_sidebar', array(
+                'label' => __('Background Color Sidebar', 'kiame'),
+                'section' => 'colors',
+                'settings' => 'background_sidebar',
             )
         )
     );
@@ -259,6 +248,9 @@ function kiame_custom_css()
 
     .bg-white, .kiame-footer {
         background-color: <?php echo esc_html(get_theme_mod('background_color_menu')); ?> !important;
+    }
+    .kiame-sidebar, .btn-kiame {
+        background-color: <?php echo esc_html(get_theme_mod('background_sidebar', '#1e1e1e')); ?> !important;
     }
 
 

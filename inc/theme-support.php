@@ -263,7 +263,7 @@ function kiame_get_post_navigation()
 {
     if (get_comment_pages_count() > 1 && get_option('page_comments')):
 
-        require get_template_directory().'/inc/templates/kiame-comment-nav.php';
+        require get_template_directory().'/templates/kiame-comment-nav.php';
 
     endif;
 }
