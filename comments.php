@@ -110,7 +110,7 @@ if( post_password_required() ){
 		
 		$args = array(
 			
-			'class_submit' => 'btn btn-block btn-lg btn-info',
+			'class_submit' => 'btn btn-block btn-lg btn-primary btn-kiame',
 			'labkiame_submit' => __( 'Submit Comment', 'kiame' ),
 			'comment_field' =>
 				'<p class="form-group"><label for="comment">' . _x( 'Comment', 'noun', 'kiame' ) . '</label> <span class="required">*</span><textarea id="comment" class="form-control" name="comment" rows="4" required="required"></textarea></p>',

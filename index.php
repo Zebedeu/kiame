@@ -1,10 +1,8 @@
 <?php get_header(); ?>
 
-    <main class="page projets-page">
-        <section class="portfolio-block projects compact-grid">
-            <div class="row no-gutters">
-
-            <?php 
+<main class="page project-page">
+    <section class="portfolio-block project">            
+         <?php 
 
             if( have_posts() ) :
 
@@ -14,8 +12,7 @@
                 endwhile;
             endif;
             ?>
-                </div>
-            </section>
-        </main>
+    </section>
+</main>
 
-<?php get_footer(); ?>
+<?php get_footer();?>

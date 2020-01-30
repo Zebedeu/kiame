@@ -1,7 +1,7 @@
         </section>
     </main>
 
- <footer class="page-footer kiame-footer">
+ <footer class="page-footer kiame-footer ">
         <div class="container">
             <div class="links">
 
@@ -27,8 +27,9 @@
             	<?php echo  get_theme_mod( 'google') ? '<a href="'. esc_url(get_theme_mod( 'google')) .'"><i class ="icon ion-social-google"></i></a>' : '' ; ?>
             	<?php echo  get_theme_mod( 'linkedin') ? '<a href="'. esc_url(get_theme_mod( 'linkedin')) .  '"><i class="icon ion-social-linkedin-outline"></i></a>' : '' ; ?>
             	</div>
+                        <p class="colort"><?php echo esc_html(date_i18n( 'Y') . ' '. get_theme_mod('copyright_text'));?></p>
+
         </div>
-        <p><?php echo esc_html(date_i18n( 'Y') . ' '. get_theme_mod('copyright_text'));?></p>
     </footer>
     <?php wp_footer();?>
 
